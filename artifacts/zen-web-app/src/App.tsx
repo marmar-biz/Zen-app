@@ -113,7 +113,7 @@ function useReveal() {
 export default function App() {
   const [activeNav, setActiveNav] = useState('home')
   const [scrolled, setScrolled] = useState(false)
-  const [form, setForm] = useState<FormData>({ name: '', brand: '', job: '', phone: '', whatsapp: '', instagram: '', plan: '', notes: '' })
+  const [form, setForm] = useState<OrderFormData>({ name: '', brand: '', job: '', phone: '', whatsapp: '', instagram: '', plan: '', notes: '' })
   const [submitted, setSubmitted] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
