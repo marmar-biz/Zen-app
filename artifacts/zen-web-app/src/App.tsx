@@ -94,11 +94,10 @@ const FAQS = [
   { q: 'روش پرداخت چگونه است؟', a: '۵۰٪ پیش‌پرداخت قبل از شروع کار، ۵۰٪ پس از تأیید دمو. پرداخت از طریق کارت‌به‌کارت انجام می‌شود.' },
 ]
 
-interface FormData {
+interface OrderFormData {
   name: string; brand: string; job: string; phone: string;
   whatsapp: string; instagram: string; plan: string; notes: string;
 }
-
 function useReveal() {
   useEffect(() => {
     const els = document.querySelectorAll('.reveal')
