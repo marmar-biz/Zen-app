@@ -383,7 +383,7 @@ export default function App() {
                   <input
                     className="form-input"
                     name={f.name}
-                    value={(form as Record<string, string>)[f.name]}
+                    value={(form as unknown as Record<string, string>)[f.name]}
                     onChange={handleChange}
                     required={f.required}
                     placeholder={f.placeholder}
